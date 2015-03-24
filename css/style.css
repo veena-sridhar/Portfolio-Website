@@ -1,0 +1,321 @@
+/* Navbar Styles */
+
+nav {
+  background-color: black;
+}
+
+.fa-times {
+  display: none;
+  cursor: pointer;
+  color: #483E9E;
+  position: fixed;
+}
+
+.fa-bars {
+  float: right;
+  margin-top: 0;
+  position: fixed;
+  cursor: pointer;
+  color: #483E9E;
+}
+
+.navbar-opened {
+  padding-top: 4em;
+  display: none;
+}
+
+.navbar-opened > li {
+  font-size: 2em;
+  font-family: 'Paytone One', sans-serif;
+  color: #F0F0F0;
+  cursor: pointer;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.navbar-opened > li:hover {
+  text-decoration: underline;
+}
+
+.navbar-opened > li > .fa {
+  margin-right: 2em;
+}
+
+/* Header Styling */
+
+header {
+  background-image: url('../images/Greeting-Image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 3px 3px 5px #36302B;  
+  -moz-box-shadow:    3px 3px 5px #36302B;  
+  box-shadow:         3px 3px 5px #36302B;  
+}
+
+.top-intro, 
+.bottom-intro,
+header > h1 {
+  color: #F0F0F0;
+  text-align: center;
+}
+
+.top-intro {
+  font-weight: bold;
+  font-size: 3em;
+  font-family: 'Droid Sans', sans-serif;
+  margin-top: 3em;
+}
+
+.bottom-intro {
+  font-weight: bold;
+  font-size: 3em;
+  font-family: 'Droid Sans', sans-serif;
+  margin-bottom: 3em;
+}
+
+header > h1 {
+  font-weight: bold;
+  font-size: 6em;
+  font-family: 'Paytone One', sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.button-wrapper > button {
+  margin-bottom: 3em;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.5em;
+  width: 10em;
+  text-align: center;
+  height: 2.5em;
+  cursor: pointer;
+  color: #F0F0F0;
+  background-color: #36302B;
+  border-color: #36302B; 
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.button-wrapper > button:hover {
+  color: #F0F0F0;
+  background-color: #36302B;
+  box-shadow: 3px 3px 2px #F0F0F0;
+  border-color: #36302B;
+}
+
+.about-me {
+  background-color: #F0F0F0;
+  padding-bottom: 3em;
+  -webkit-box-shadow: inset 3px 30px 30px -10px black;
+  -moz-box-shadow: inset 3px 30px 30px -10px black;
+  box-shadow: inset 3px 30px 30px -10px black;
+}
+
+.about {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 1em;
+  font-size: 3em;
+  font-family: 'Paytone One', sans-serif;
+  color: #483E9E;
+}
+
+#infoContainer {
+  padding-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#infoContainer > div {
+  display: inline-flex;
+}
+
+#infoContainer > div > div {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.7em;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.me {
+  border-radius: 10px;
+}
+
+.divColor { 
+  background-color: #B3B3B3;
+  border-radius: 10px; 
+  font-size: 1.7rem;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+  padding: 10px 10px;
+  transition: 0.75s ease;
+}
+
+.strongWords {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 3rem;
+}
+
+.divchildColor {
+  background-color: #B3B3B3;
+  border-radius: 10px; 
+  font-size: 1.2em;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+  padding: 10px 10px;
+  transition: 0.75s ease;
+}
+
+.childstrongWords {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1em;
+}
+
+.divColor:hover,
+.divchildColor:hover {
+  transform: scale(0.7);
+}
+
+.row1 {
+  width: 80%
+}
+
+.born-in,
+.grew-up {
+  margin: 10px 10px;
+  width: 100%;
+}
+
+.row2 {
+  width: 80%;
+}
+
+.from,
+.college,
+.major {
+  margin: 10px 10px;
+  width: 33%
+}
+
+.bigDiv {
+  width: 80%;
+}
+
+.verticalBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.photo {
+  margin: 10px 10px;
+}
+
+.live,
+.work,
+.speak {
+  margin: 10px 0;
+  flex: 1;
+}
+
+.row6 {
+  width: 80%
+}
+
+.activity {
+  width: 66.6%
+}
+
+.code {
+  width: 33.3%
+}
+
+.skills {
+  background-color: #332B40;
+  padding-bottom: 3em;
+  -webkit-box-shadow: inset 3px 30px 30px -10px black;
+  -moz-box-shadow: inset 3px 30px 30px -10px black;
+  box-shadow: inset 3px 30px 30px -10px black;
+}
+
+.skills > h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 3em;
+  color: #F0F0F0;
+  font-family: 'Paytone One', sans-serif;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+#html,
+#js,
+#jquery,
+#ajax,
+#rat {
+  font-family: 'Droid Sans', sans-serif;
+  color: #F0F0F0;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  margin: 1.5em 1em;
+  border: 0.1em solid #004c66;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 1em;
+}
+
+.skillbar {
+  position:relative;
+  height: 2em;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-bar {
+  height: 2em;
+  width:0px;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+
+.resumebuttondiv {
+  text-align: center;
+}
+
+#resume {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.5em;
+  height: 2.5em;
+  width: 17em;
+  background-color: #004B66;
+  color: #F0F0F0;
+  border-color: #004B66;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+#resume:hover {
+  box-shadow: 2px 2px 2px #F0F0F0;
+} 
+

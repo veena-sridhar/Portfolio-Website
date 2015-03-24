@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <!-- Fonts and Basics -->
+   <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+   <meta charset='utf-8'>
+   <title>Veena Sridhar - Front End Engineer</title>
+
+   <!-- CSS Links -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/reset.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.min.css">
+
+   <!-- JS Links -->
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="js/app.js"></script>
+</head>
+<body>
+   <header>
+      <i class="fa-3x"><i class="fa"><i class="fa-bars"></i></i></i>
+      <i class="fa-3x"><i class="fa"><i class="fa-times"></i></i></i>
+      <nav>
+         <ul class="navbar-opened">
+            <li><i class="fa"><i class="fa-home"></i></i>Home</li>
+            <li><i class="fa"><i class="fa-user"></i></i>About</li>
+            <li><i class="fa"><i class="fa-cogs"></i></i>Work</li>
+            <li><i class="fa"><i class="fa-envelope-o"></i></i>Contact</li>
+         </ul>
+      </nav>
+      <h2 class="top-intro">Welcome to the online portfolio of</h2>
+      <h1><strong>Veena Sridhar</strong></h1>
+      <h2 class="bottom-intro">A front-end engineer based in Silicon Valley, CA</h2>
+      <div class="button-wrapper">
+         <button>Get In Touch</button>
+      </div>
+      </header>
+      <section class="about-me">
+         <h1 class="about">About Me</h1>
+         <div id="infoContainer">
+
+            <!--Row 1 of About -->
+            <div class="row1">
+               <div class="born-in divColor">I was born in <br /><strong class="strongWords">Columbia, South Carolina</strong></div>
+               <div class="grew-up divColor">I grew up in <br /><strong class="strongWords">San Jose, California</strong></div>
+            </div>
+
+            <!--Row 2 of About -->
+            <div class="row2">
+               <div class="from divColor">My family is from <br /><strong class="strongWords">Bangalore, India</strong></div>
+               <div class="college divColor">I went to college at <br /><strong class="strongWords">UC San Diego</strong></div>
+               <div class="major divColor">I majored in <br /><strong class="strongWords">Chemistry</strong></div>
+            </div>
+
+            <!--Big Div -->
+            <div class="bigDiv">
+
+               <!--Photo Container -->
+               <div class="photo"><img class="me" src="images/me.jpg"></div>
+               <div class="verticalBlock">
+                  <!--Row 3 of about -->
+                  <div class="live divchildColor">I live in <strong class="childstrongWords">San Jose, California</strong></div>
+
+                  <!--Row 4 of about -->
+                  <div class="work divchildColor">I work as a <strong class="childstrongWords">Formulations Chemist</strong></div>
+
+                  <!--Row 5 of about-->
+                  <div class="speak divchildColor">I speak <strong class="childstrongWords">English, Hindi, and Tamil</strong></div>
+               </div>
+            </div>
+
+            <!--Row 6 of about-->
+            <div class="row6">
+               <div class="activity divColor">My favorite activies are <strong class="strongWords">Swimming, Tennis, and Chess</strong></div>
+               <div class="code divColor">I learned to code in <br /><strong class="strongWords">2014</strong></div>
+            </div>
+         </div>
+      </section>
+
+      <!--Skills section -->
+      <section class="skills">
+         <h1>I can say I'm pretty good at...</h1>
+         <ul class="skillsList">
+            <li class="skillbar" id="rat" data-percent="100%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">Being a Labrat</span></li>
+            <li class="skillbar" id="html" data-percent="95%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">HTML5 and CSS3</span></li>
+            <li class="skillbar" id="jquery" data-percent="75%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">JQuery</span></li>
+            <li class="skillbar" id="js" data-percent="60%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">JavaScript</span></li>
+            <li class="skillbar" id="ajax" data-percent="40%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">AJAX and API Integration</span></li>
+         </ul> 
+         <div class="resumebuttondiv">
+         <button id="resume">Download Printable Resume</button>
+         </div>
+      </section> 
+   <!--   <section class="skills">
+         <h1>I can say I'm pretty good at...</h1>
+         <div class="centering">
+         <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar-title" style="background: #004c66;"><span>Being a Labrat</span></div>
+            <div class="skillbar-bar" style="background: #e5dd00;"></div>
+            <div class="skill-bar-percent">100%</div>
+         </div>  End Skill Bar 
+
+         <div class="skillbar clearfix " data-percent="95%">
+            <div class="skillbar-title" style="background: #008c74;"><span>HTML5 and CSS3</span></div>
+            <div class="skillbar-bar" style="background: #8cb202;"></div>
+            <div class="skill-bar-percent">95%</div>
+         </div>  End Skill Bar 
+
+         <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title" style="background: #e5dd00;"><span>jQuery</span></div>
+            <div class="skillbar-bar" style="background: #008c74;"></div>
+            <div class="skill-bar-percent">70%</div>
+         </div>  End Skill Bar 
+
+         <div class="skillbar clearfix " data-percent="60%">
+            <div class="skillbar-title" style="background: #8cb202;"><span>JavaScript</span></div>
+            <div class="skillbar-bar" style="background: #004c66;"></div>
+            <div class="skill-bar-percent">60%</div>
+         </div> End Skill Bar 
+
+         <div class="skillbar clearfix " data-percent="40%">
+            <div class="skillbar-title" style="background: #332b40;"><span>AJAX and API Integration</span></div>
+            <div class="skillbar-bar" style="background: #e5dd00"></div>
+            <div class="skill-bar-percent">40%</div>
+         </div>  End Skill Bar 
+         <div class="resumebuttondiv">
+            <button id="resume">Download Printable Resume</button>
+         </div>
+      </div>
+      </section> -->
+</html>
