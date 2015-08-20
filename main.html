@@ -41,9 +41,9 @@
          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                <li class="active"><a href="#home"><i class="fa"><i class="fa-home"></i></i>Home</a></li>
-               <li><a href="#portfolio"><i class="fa"><i class="fa-cogs"></i></i>Portfolio</a></li>
-               <li><a href="#about"><i class="fa"><i class="fa-user"></i></i>About</a></li>
-               <li><a href="#contact"><i class="fa"><i class="fa-phone"></i></i>Contact</a></li>
+               <li class="inactive"><a href="#portfolio"><i class="fa"><i class="fa-cogs"></i></i>Portfolio</a></li>
+               <li class="inactive"><a href="#about"><i class="fa"><i class="fa-user"></i></i>About</a></li>
+               <li class="inactive"><a href="#contact"><i class="fa"><i class="fa-phone"></i></i>Contact</a></li>
             </ul>
          </div><!-- /.navbar-collapse -->
          </div><!-- /.container-fluid -->
@@ -98,9 +98,35 @@
    <!-- Start About Section -->
 
    <section id="about" class="clearfix">
-      <h1>About</h1>
+      <h1 id="about-heading">About</h1>
       <img class="col-md-4 picture img-responsive" src="images/face.jpg">
-      <p class="col-md-8 bio">After finishing my degree Chemistry at UC San Diego, I started working at a biotech company in San Diego. My job there required quite a bit of familiarity with some laboratory data management websites and software. Pretty soon, this sparked my interest in web development, and I took an online class from Thinkful to learn more. With this, I was hooked! If I wasn't coding, I was always thinking about it no matter what else I was doing. I still get so consumed by it that I'd love to turn it into a career! Currently, I am looking for contract opportunities in front-end development. Check out my <a href="http://veena-sridhar.blogspot.com/" target="_blank">blog</a> to find out more about my learning journey!</p>
+      <p class="col-md-8 bio">After finishing my degree Chemistry at UC San Diego, I started working at a biotech company in San Diego. My job there required quite a bit of familiarity with some laboratory data management websites and software. Pretty soon, this sparked my interest in web development, and I took an online class from Thinkful to learn more. With this, I was hooked! If I wasn't coding, I was always thinking about it no matter what else I was doing. Currently, I am looking for contract opportunities in front-end development. Check out my <a href="http://veena-sridhar.blogspot.com/" target="_blank">blog</a> to find out more about my learning journey!</p>
+      <h1 id="skills-title">Skills</h1>
+      <div class="skills">
+         <div class="col-md-6 code-skills">
+            <i class="fa-4x"><i class="fa"><i class="fa-code"></i></i></i>
+            <h3 class="skill-heading">Code</h3>
+            <hr />
+               <ul class="skill-list">
+                  <li>HTML and CSS</li>
+                  <li>Bootstrap and Grid Systems</li>
+                  <li>JQuery</li>
+                  <li>JavaScript</li>
+                  <li class="last">AJAX and API Integration</li>
+               </ul>
+         </div>
+         <div class="col-md-6 design-skills">
+            <i class="fa-4x"><i class="fa"><i class="fa-paint-brush"></i></i></i>
+            <h3 class="skill-heading">Design</h3>
+            <hr />
+            <ul class="skill-list">
+               <li>User Experience Design</li>
+               <li>Wireframes</li>
+               <li>Branding</li>
+               <li class="last">Responsive Design</li>
+            </ul>
+         </div>
+      </div>
    </section>
 
    <!-- Start Contact Section -->
@@ -124,8 +150,6 @@
          <input name="email" type="text" class="form-name" required>
          <h3 class="subject-header">Subject:</h3>
          <input name="subject" type="text" class="form-subject">
-         <h3 class="subject-header">Location:</h3>
-         <input name="location" type="text" class="form-subject">
          <h3 name="message" class="message">Message:</h3>
          <textarea name="message" class="form-message" required></textarea> <br />
          <button type="submit"><i class="fa-2x"><i class="fa"><i class="fa-paper-plane"></i></i></i></button>

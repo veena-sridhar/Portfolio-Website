@@ -15,20 +15,22 @@ $(document).ready(function() {
   	loop: true
   	});
 
-  $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+  /*navBehavior ();
+  
+  function navBehavior () {
+    if (location.href is ('#home')) {
+      $('#home').addClass('.active').removeClass('.inactive');
+    } else if (location.href is ('#portfolio')) {
+      $('#portfolio').addClass('.active').removeClass('.inactive');
+    } else if (location.href is ('#about')) {
+      $('#about').addClass('.active').removeClass('.inactive');
+    } else if (location.href is ('#contact')) {
+      $('#contact').addClass('.active').removeClass('.inactive');
+    } else {
+      return;
     }
-    });
-  });
+  }; */
+
 });
 
 

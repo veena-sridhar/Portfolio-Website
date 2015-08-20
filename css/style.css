@@ -10,6 +10,10 @@
 	margin-top: -15px;
 }
 
+.active {
+	background-color: black;
+}
+
 .nav > li > a > i {
 	margin-right: 7px;
 }
@@ -20,16 +24,17 @@
 }
 
 .banner-text {
-	padding-top: 9em;
-	text-align: center;
+	padding-top: 20%;
+	text-align: left;
+	padding-left: 5%;
 }
 
 .name {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
-	font-size: 4.5em;
-	padding-bottom: 1em;
-	color: #007FFF;
+	font-size: 5em;
+	padding-bottom: 0.75em;
+	color: #104E8B;
 	text-shadow: 2px 2px black;
 }
 
@@ -37,15 +42,15 @@
 	display: inline-block;
 	font-family: 'Pontano Sans', sans-serif;
 	font-weight: 600;
-	color: #007FFF;
-	font-size: 3em;
+	color: #104E8B;
+	font-size: 3.5em;
 	text-shadow: 2px 2px black;
 }
 
 .typed-cursor{
     opacity: 1;
-    font-size: 3em;
-    color: #007FFF;
+    font-size: 3.5em;
+    color: #104E8B;
     font-weight: 600;
 	padding-bottom: 2.5em;
 	text-shadow: 2px 2px black;
@@ -119,14 +124,14 @@
 }
 
 .work {
-	background-color: #007FFF;
+	background-color: #171717;
 }
 
 .col-md-4 {
 	font-family: 'Pontano Sans', sans-serif;
 	text-align: center;
 	padding-bottom: 1.5em;
-	background-color: #007FFF;
+	background-color: #171717;
 }
 
 .col-md-4 > a > img {
@@ -161,10 +166,11 @@
 
 #about {
 	background-color: white;
+	width: 90%;
+	margin: 0 auto;
 }
 
-#about > h1 {
-	text-shadow: 1px 1px black;
+#about-heading {
 	padding-top: 1em;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
@@ -188,7 +194,7 @@
 	font-family: 'Pontano Sans', sans-serif;
 	font-size: 1.5em;
 	font-weight: 600;
-	padding-bottom: 1em;
+	padding-bottom: 1.5em;
 	line-height: 1.5;
 	text-align: center;
 }
@@ -198,8 +204,59 @@
 	margin-bottom: 1.5em;
 }
 
+.skills {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#skills-title {
+	padding-bottom: 2.2em;
+	padding-top: 2em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 2.2em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #104E8B; 
+}
+
+.fa-4x {
+	border: 3px solid black;
+	border-radius: 70px;
+	padding: 20px;
+}
+
+.skill-heading {
+	padding-top: 1.8em;
+	font-family: 'Montserrat', sans-serif;
+	color: #104E8B;
+	font-weight: 400;
+	font-size: 1.9em;
+}
+
+hr {
+	width: 30%;
+	border-color: black;
+}
+
+.col-md-6 {
+	text-align: center;
+}
+
+.skill-list > li {
+	padding-top: 0.8em;
+	font-family: 'Pontano Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1.5em;
+}
+
+.last {
+	padding-bottom: 2em;
+}
+
 #contact {
-	background-color: black;
+	background-color: #171717;
 }
 
 #contact > h1 {
@@ -279,7 +336,6 @@
 .social-media > a > i {
 	color: white;
 	cursor: pointer;
-	margin-left: 0.5em;
 }
 
 .fa-facebook,
@@ -293,6 +349,7 @@
     -moz-transition: background-color 0.5s ease-in-out;
     -o-transition: background-color 0.5s ease-in-out;
 	transition: color 0.5s ease-in-out;
+	padding: 12px;
 }
 
 .fa-facebook:hover {
@@ -339,9 +396,21 @@ footer > p {
 	margin-left: 30px;
 }
 
-@media (max-width: 1050px) and (min-width: 992px) {
+@media (max-width: 1167px) and (min-width: 1050px) {
+	#about > p {
+		margin-left: 1em;
+	}
+
+}
+
+@media (max-width: 1167px) and (min-width: 992px) {
 	#about > img {
 		float: none;
+	}
+
+	#about > p {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
 
@@ -361,7 +430,12 @@ footer > p {
 		width: 350px;
 	} 
 
-	.social-media > a > i {
+	.social-media {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.social-media > a > .fa-3x {
 		padding-left: 20px;
 	}
 
@@ -372,6 +446,10 @@ footer > p {
 	#about > p {
 		font-size: 1.2em;
 		text-align: center;
+	}
+
+	.last {
+		padding-bottom: 3em;
 	}
 
 	.social-media > h3 {
