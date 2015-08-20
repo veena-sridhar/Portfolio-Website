@@ -2,131 +2,143 @@
 <html lang='en'>
 <head>
    <!-- Fonts and Basics -->
-   <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
    <meta charset='utf-8'>
+   <link rel="icon" type="image/png" href="images/VS-Logo-5.png" width="16px" height="16px">
    <title>Veena Sridhar - Front End Engineer</title>
 
    <!-- CSS Links -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
    <link rel="stylesheet" type="text/css" href="css/reset.css">
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-   <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css">
 
    <!-- JS Links -->
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="bootstrap/js/bootstrap.js"></script>
    <script src="js/app.js"></script>
+   <script src="js/typed.js"></script>
 </head>
 <body>
-   <header>
-      <i class="fa-3x"><i class="fa"><i class="fa-bars"></i></i></i>
-      <i class="fa-3x"><i class="fa"><i class="fa-times"></i></i></i>
-      <nav>
-         <ul class="navbar-opened">
-            <li><i class="fa"><i class="fa-home"></i></i>Home</li>
-            <li><i class="fa"><i class="fa-user"></i></i>About</li>
-            <li><i class="fa"><i class="fa-cogs"></i></i>Work</li>
-            <li><i class="fa"><i class="fa-envelope-o"></i></i>Contact</li>
-         </ul>
+
+   <!-- Navigation -->
+   <header id="home">
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home"><img src="images/vs-logo-white.svg"></a>
+         </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="active"><a href="#home"><i class="fa"><i class="fa-home"></i></i>Home</a></li>
+               <li><a href="#portfolio"><i class="fa"><i class="fa-cogs"></i></i>Portfolio</a></li>
+               <li><a href="#about"><i class="fa"><i class="fa-user"></i></i>About</a></li>
+               <li><a href="#contact"><i class="fa"><i class="fa-phone"></i></i>Contact</a></li>
+            </ul>
+         </div><!-- /.navbar-collapse -->
+         </div><!-- /.container-fluid -->
       </nav>
-      <h2 class="top-intro">Welcome to the online portfolio of</h2>
-      <h1><strong>Veena Sridhar</strong></h1>
-      <h2 class="bottom-intro">A front-end engineer based in Silicon Valley, CA</h2>
-      <div class="button-wrapper">
-         <button>Get In Touch</button>
+      <div class="banner-text">
+         <h1 class="name">Veena Sridhar</h1>
+         <h3 class="typed-text"><h3 class="typed-cursor"></h3></h3>
+      </div> 
+   </header>
+
+   <!-- Start Portfolio Section -->
+
+      <div class="hello">
+         <h4 class="description">Hi there. I'm a Front-End Engineer from Silicon Valley, CA.</h4>
       </div>
-      </header>
-      <section class="about-me">
-         <h1 class="about">About Me</h1>
-         <div id="infoContainer">
-
-            <!--Row 1 of About -->
-            <div class="row1">
-               <div class="born-in divColor">I was born in <br /><strong class="strongWords">Columbia, South Carolina</strong></div>
-               <div class="grew-up divColor">I grew up in <br /><strong class="strongWords">San Jose, California</strong></div>
-            </div>
-
-            <!--Row 2 of About -->
-            <div class="row2">
-               <div class="from divColor">My family is from <br /><strong class="strongWords">Bangalore, India</strong></div>
-               <div class="college divColor">I went to college at <br /><strong class="strongWords">UC San Diego</strong></div>
-               <div class="major divColor">I majored in <br /><strong class="strongWords">Chemistry</strong></div>
-            </div>
-
-            <!--Big Div -->
-            <div class="bigDiv">
-
-               <!--Photo Container -->
-               <div class="photo"><img class="me" src="images/me.jpg"></div>
-               <div class="verticalBlock">
-                  <!--Row 3 of about -->
-                  <div class="live divchildColor">I live in <strong class="childstrongWords">San Jose, California</strong></div>
-
-                  <!--Row 4 of about -->
-                  <div class="work divchildColor">I work as a <strong class="childstrongWords">Formulations Chemist</strong></div>
-
-                  <!--Row 5 of about-->
-                  <div class="speak divchildColor">I speak <strong class="childstrongWords">English, Hindi, and Tamil</strong></div>
-               </div>
-            </div>
-
-            <!--Row 6 of about-->
-            <div class="row6">
-               <div class="activity divColor">My favorite activies are <strong class="strongWords">Swimming, Tennis, and Chess</strong></div>
-               <div class="code divColor">I learned to code in <br /><strong class="strongWords">2014</strong></div>
-            </div>
+   <section id="portfolio" class="clearfix">
+      <div class="work">
+         <h2 class="portfolio">Portfolio</h2>
+         <div class="col-md-4 sample">
+            <a href="Karma-Landing-Page-Clone/index.html" target="_blank"><img src="images/karma-clone.png" height="250px" width="300px"></a>
+            <h4>Karma Website Clone</h4>
+            <p>HTML, CSS</p>
          </div>
-      </section>
-
-      <!--Skills section -->
-      <section class="skills">
-         <h1>I can say I'm pretty good at...</h1>
-         <ul class="skillsList">
-            <li class="skillbar" id="rat" data-percent="100%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">Being a Labrat</span></li>
-            <li class="skillbar" id="html" data-percent="95%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">HTML5 and CSS3</span></li>
-            <li class="skillbar" id="jquery" data-percent="75%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">JQuery</span></li>
-            <li class="skillbar" id="js" data-percent="60%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">JavaScript</span></li>
-            <li class="skillbar" id="ajax" data-percent="40%"><span class="skillbar-bar" style="background: linear-gradient(#004c66, #f0f0f0);">AJAX and API Integration</span></li>
-         </ul> 
-         <div class="resumebuttondiv">
-         <button id="resume">Download Printable Resume</button>
+         <div class="col-md-4 sample">
+            <a href="JQuery-StreetFighter/main.html" target="_blank"><img src="images/street-fighter.png" height="250px" width="300px"></a>
+            <h4>Street Fighter</h4>
+            <p>HTML, CSS, JQuery</p>
          </div>
-      </section> 
-   <!--   <section class="skills">
-         <h1>I can say I'm pretty good at...</h1>
-         <div class="centering">
-         <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #004c66;"><span>Being a Labrat</span></div>
-            <div class="skillbar-bar" style="background: #e5dd00;"></div>
-            <div class="skill-bar-percent">100%</div>
-         </div>  End Skill Bar 
-
-         <div class="skillbar clearfix " data-percent="95%">
-            <div class="skillbar-title" style="background: #008c74;"><span>HTML5 and CSS3</span></div>
-            <div class="skillbar-bar" style="background: #8cb202;"></div>
-            <div class="skill-bar-percent">95%</div>
-         </div>  End Skill Bar 
-
-         <div class="skillbar clearfix " data-percent="70%">
-            <div class="skillbar-title" style="background: #e5dd00;"><span>jQuery</span></div>
-            <div class="skillbar-bar" style="background: #008c74;"></div>
-            <div class="skill-bar-percent">70%</div>
-         </div>  End Skill Bar 
-
-         <div class="skillbar clearfix " data-percent="60%">
-            <div class="skillbar-title" style="background: #8cb202;"><span>JavaScript</span></div>
-            <div class="skillbar-bar" style="background: #004c66;"></div>
-            <div class="skill-bar-percent">60%</div>
-         </div> End Skill Bar 
-
-         <div class="skillbar clearfix " data-percent="40%">
-            <div class="skillbar-title" style="background: #332b40;"><span>AJAX and API Integration</span></div>
-            <div class="skillbar-bar" style="background: #e5dd00"></div>
-            <div class="skill-bar-percent">40%</div>
-         </div>  End Skill Bar 
-         <div class="resumebuttondiv">
-            <button id="resume">Download Printable Resume</button>
+         <div class="col-md-4 sample">
+            <a href="Shopping-List-App/main.html" target="_blank"><img src="images/shopping-list.png" height="250px" width="300px"></a>
+            <h4>Shopping List</h4>
+            <p>HTML, CSS, JQuery</p>
+         </div>
+         <div class="col-md-4 sample">
+            <a href="hot-or-cold-starter-master/index.html" target="_blank"><img src="images/hot-or-cold.png" height="250px" width="300px"></a>
+            <h4>Hot or Cold Game</h4>
+            <p>HTML, CSS, JavaScript</p>
+         </div>
+         <div class="col-md-4 sample">
+            <a href="Quiz-App/index.html" target="_blank"><img src="images/quiz-game.png" height="250px" width="300px"></a>
+            <h4>Space Quiz</h4>
+            <p>HTML, CSS, JavaScript</p>
+         </div>
+         <div class="col-md-4 sample">
+            <a href="https://github.com/veena-sridhar/FizzBuzz-App" target="_blank"><img src="images/fizzbuzz.png" height="250px" width="300px"></a>
+            <h4>Fizz Buzz Solutions (GitHub)</h4>
+            <p>HTML, JavaScript</p>
          </div>
       </div>
-      </section> -->
+   </section>
+
+   <!-- Start About Section -->
+
+   <section id="about" class="clearfix">
+      <h1>About</h1>
+      <img class="col-md-4 picture img-responsive" src="images/face.jpg">
+      <p class="col-md-8 bio">After finishing my degree Chemistry at UC San Diego, I started working at a biotech company in San Diego. My job there required quite a bit of familiarity with some laboratory data management websites and software. Pretty soon, this sparked my interest in web development, and I took an online class from Thinkful to learn more. With this, I was hooked! If I wasn't coding, I was always thinking about it no matter what else I was doing. I still get so consumed by it that I'd love to turn it into a career! Currently, I am looking for contract opportunities in front-end development. Check out my <a href="http://veena-sridhar.blogspot.com/" target="_blank">blog</a> to find out more about my learning journey!</p>
+   </section>
+
+   <!-- Start Contact Section -->
+
+   <section id="contact" class="clearfix">
+      <h1>Let's Talk!</h1>
+      <div class="social-media col-md-5">
+         <h3>The contact form here would be the best way to get in touch with me. Alternatively, you can use any of the following social media sites.</h3>
+         <a href="https://www.facebook.com/veena.sridhar" target="_blank"><i class="fa-3x"><i class="fa"><i class="fa-facebook"></i></i></i></a>
+         <a href="https://twitter.com/veena_m_sridhar" target="_blank"><i class="fa-3x"><i class="fa"><i class="fa-twitter"></i></i></i></a>
+         <a href="https://www.linkedin.com/in/veenasridhar" target="_blank"><i class="fa-3x"><i class="fa"><i class="fa-linkedin"></i></i></i></a>
+         <a href="https://www.pinterest.com/veenasridhar" target="_blank"><i class="fa-3x"><i class="fa"><i class="fa-pinterest-p"></i></i></i></a>
+         <a href="https://plus.google.com/+VeenaSridhar/about" target="_blank"><i class="fa-3x"><i class="fa"><i class="fa-google-plus"></i></i></i></a>
+         <a href="https://instagram.com/v.sridhar91/" target="_blank"><i class="fa-3x"><i class="fa"><i class="fa-instagram"></i></i></i></a>
+         <a href="https://github.com/veena-sridhar" target="_blank"><i class="fa-3x"><i class="fa"><i class="fa-github-alt"></i></i></i></a>
+      </div>
+      <form class="contact-form col-md-7">
+         <h3 class="name-header">Name:</h3>
+         <input name="name" type="text" class="form-name" required>
+         <h3 class="name-header">Email:</h3>
+         <input name="email" type="text" class="form-name" required>
+         <h3 class="subject-header">Subject:</h3>
+         <input name="subject" type="text" class="form-subject">
+         <h3 class="subject-header">Location:</h3>
+         <input name="location" type="text" class="form-subject">
+         <h3 name="message" class="message">Message:</h3>
+         <textarea name="message" class="form-message" required></textarea> <br />
+         <button type="submit"><i class="fa-2x"><i class="fa"><i class="fa-paper-plane"></i></i></i></button>
+      </form>
+   </section>
+
+   <footer>
+      <p class="copyright">&copy Veena Sridhar 2015-2016</p>
+      <p class="photo-credits">Photo Credits: Victoria Nguyen (Home Section) and Ishika Arora (About Section)</p>
+   </footer>
+  
+
+   
+
+</body>
 </html>
